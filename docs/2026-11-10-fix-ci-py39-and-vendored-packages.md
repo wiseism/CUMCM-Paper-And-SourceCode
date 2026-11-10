@@ -23,3 +23,7 @@
 
 - `runs-on: ubuntu-latest` → `runs-on: ubuntu-24.04`（3.9–3.12 全部可用）；
 - 严格 flake8 检查统一加 `--extend-exclude=packages`，忽略 vendored 目录（非业务代码）。
+
+## 补记
+
+首轮修复只改了 `python-package.yml` 与 `octave-tests.yml`，`build.yml`（`CMake Tests` 组里名为 CUMCM Tests 的 workflow，跑同样两个 python 目录）同样有 3.9-on-Ubuntu-26.04 问题，在本轮补上 `ubuntu-24.04` 与 `--extend-exclude=packages`。
