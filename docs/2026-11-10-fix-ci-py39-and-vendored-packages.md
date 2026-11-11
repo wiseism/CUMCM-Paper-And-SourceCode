@@ -27,3 +27,10 @@
 ## 补记
 
 首轮修复只改了 `python-package.yml` 与 `octave-tests.yml`，`build.yml`（`CMake Tests` 组里名为 CUMCM Tests 的 workflow，跑同样两个 python 目录）同样有 3.9-on-Ubuntu-26.04 问题，在本轮补上 `ubuntu-24.04` 与 `--extend-exclude=packages`。
+
+## 验证记录
+| Run | 结果 |
+|---|---|
+| 42836742411 (Python package, 5d0954a) | ✅ success |
+| 42836742549 (Octave Tests, 5d0954a) | ✅ success |
+| 42836742581 (CUMCM Tests, 5d0954a) | ✅ success |
